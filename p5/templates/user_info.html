@@ -1,0 +1,9 @@
+{%extends'layout.html'%}
+{% block body%}
+    <h1>User information </h1>
+    <form action="/user_info" methods="POST" >
+    <input type="text" name="user" placeholder="user Name">
+    <input type="email" name="email" placeholder="email address">
+    <input type="password" name="pass" placeholder="password">
+    <input type="submit" value="send">
+    {% endblock %}

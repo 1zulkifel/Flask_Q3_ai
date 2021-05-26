@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask ,request
 
 from flask import render_template
 app= Flask(__name__)
@@ -18,6 +18,10 @@ def contact():
 @app.route("/about")
 def about():
     return render_template('about.html')
+
+@app.route("/user_info" )
+def user_info():
+    return render_template('user_info.html')
 
 app.run(debug=True)
 
